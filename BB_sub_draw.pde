@@ -14,10 +14,14 @@ void renderBackground() {
 }
 
 void renderBricks(float xx, float yy) {
-  fill(255, 127, 0);
-  stroke(255, 127, 0);
+  float randomcolor1,randomcolor2,randomcolor3;
+  randomcolor1 = random(0,256);
+  randomcolor2 = random(0,256);
+  randomcolor3 = random(0,256);
+  fill(randomcolor1,randomcolor2,randomcolor3);
+  stroke(randomcolor1,randomcolor2,randomcolor3);
   rect(xx, yy, bric_x, bric_y);
-  stroke(0); 
+  stroke(0);
 }
 
 void renderBreaker() {
